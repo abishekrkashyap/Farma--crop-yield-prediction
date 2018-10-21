@@ -1,0 +1,27 @@
+<div class="container" style="text-align: center;">
+ {% extends 'base.html' %}
+
+{% block content %}
+   <h2>Welcome, {{ user.get_full_name }} <small>{{ user.username }}</small>!</h2> 
+   <h2>Welcome, {{ name }} !</h2> 
+  <p>Your email address: {{ user.email }}</p> 
+ 
+           {% if 'ATHARSH' in name %} 
+           <h1>hello {{ name }}</h1> 
+      {% endif %} 
+  <form action="/home3" method="get">
+
+  <input type="submit" value="LOOK FOR ANIMAL INTERRUPTION">
+
+</form>
+ <a href="../chennai">
+  <button type="button">TANJORE</button>  
+ </a>
+ <br>
+ <br>
+ <a href="../salem">
+   <button type="button">SALEM</button>  
+</a>
+
+{% endblock %}
+</div>
